@@ -1,0 +1,24 @@
+{
+  "name": "angusweek5project",
+  "version": "1.0.0",
+  "description": "dfd",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acfwong8/testing-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acfwong8/testing-git/issues"
+  },
+  "homepage": "https://github.com/acfwong8/testing-git#readme",
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-sass": "^2.0.4"
+  }
+}

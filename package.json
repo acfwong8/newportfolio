@@ -1,0 +1,33 @@
+{
+  "name": "mantronic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "jquery": "^2.2.0",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0",
+    "nodemailer": "^2.3.0",
+    "orchestrate": "^0.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pg": "^4.4.3",
+    "pg-promise": "^2.8.5",
+    "request": "^2.69.0",
+    "xml2js": "^0.4.16",
+    "xoauth2": "^1.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

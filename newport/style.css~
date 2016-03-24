@@ -1,0 +1,332 @@
+* {
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow-y:hidden;
+}
+
+@media (max-width: 750px){
+    body{
+        font-size:12px;
+    }
+}
+
+
+p {
+    margin:0;
+    padding:0;
+}
+
+
+section {
+    height:100vh;
+    padding-top:20px;
+}
+
+.hidden {
+    opacity:0;
+}
+
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('fonts/oswald-light-webfont.eot');
+    src: url('fonts/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/oswald-light-webfont.woff2') format('woff2'),
+         url('fonts/oswald-light-webfont.woff') format('woff'),
+         url('fonts/oswald-light-webfont.ttf') format('truetype'),
+         url('fonts/oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Slabo 27px';
+    src: url('fonts/slabo27px-regular-webfont.eot');
+    src: url('fonts/slabo27px-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/slabo27px-regular-webfont.woff2') format('woff2'),
+         url('fonts/slabo27px-regular-webfont.woff') format('woff'),
+         url('fonts/slabo27px-regular-webfont.ttf') format('truetype'),
+         url('fonts/slabo27px-regular-webfont.svg#slabo_27pxregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('fonts/oswald-regular-webfont.eot');
+    src: url('fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('fonts/oswald-regular-webfont.woff') format('woff'),
+         url('fonts/oswald-regular-webfont.ttf') format('truetype'),
+         url('fonts/oswald-regular-webfont.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*nav*/
+
+
+nav {
+    color: white;
+    position:fixed;
+    margin: 0;
+    text-align:center;
+    bottom:0;
+    width:18%;
+    margin:0 41%;
+    transition: all 0.5s ease-out;
+    z-index:2;
+}
+
+@media (max-width:1000px){
+    nav{
+        width:30%;
+        margin:0 35%;
+    }
+}
+
+@media (min-width: 1001px) and (max-width:1300px){
+    nav{
+        width:24%;
+        margin:0 38%;
+    }
+}
+
+nav span {
+    position:absolute;
+    top:50%;
+    font-size:1.2em;
+    font-family:"oswaldregular", serif;
+    transition:all 0.5s ease-in;
+
+}
+
+.homenav {
+    top:44%;
+    left:40%
+}
+
+.contnav {
+    top:68%;
+    left:62%;
+    transform:rotate(-45deg);
+}
+
+.aboutnav{
+    top:20%;
+    left:15%;
+    transform:rotate(-45deg);
+}
+
+.skillsnav {
+    top:20%;
+    left:66%;
+    transform:rotate(45deg);
+}
+
+.portnav {
+    top:64%;
+    left:12%;
+    transform:rotate(45deg);
+}
+
+nav span a{
+    color:white;
+    opacity:1;
+    text-decoration:none;
+    transition:all 0.25s ease-in;
+}
+
+nav span a:hover{
+    color:red;
+}
+
+
+
+
+.headleft{
+    float:left;
+}
+
+.headright{
+    float:left;
+    width:20%;
+}
+
+#navCircle{
+    width:100%;
+    position:relative;
+    margin:0;
+}
+
+/*canvas*/
+#canvas {
+    height:500px
+    width:1000px;
+    color:green;
+    margin: auto;
+    padding: 0;
+}
+
+.canvassec{
+    background-image:url("pictures/1.jpeg");
+    background-position:center top;
+}
+
+/*about*/
+
+@keyframes pan {
+    0% {
+        background-position: 30% 0%;
+    }
+    25%{
+        background-position: 0 25%;
+    }
+    50%{
+        background-position: 70% 0;
+    }
+    75%{
+        background-position: 0% 75%;
+    }
+    100%{
+        background-position: 30% 0%;
+    }
+}
+
+.aboutright {
+    width:680px;
+    float:right;
+    text-align:center;
+}
+
+.aboutright p{
+    margin-top:2%;
+}
+
+.aboutleft{
+    width:30%;
+    float:right;
+    text-align:center;
+}
+
+.about {
+    margin:0;
+    padding:0;
+    background-image: url("pictures/6.jpeg");
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    /* animation: pan 50s infinite linear; */
+}
+
+.about .bg{
+    height:100vh;
+    width:100%;
+    background-image:url("pictures/me/1.jpg");
+    background-position:right top;
+    background-size:75vh;
+    background-repeat:no-repeat;
+    opacity:0.9;
+    z-index:;
+}
+
+@media (max-width:800px){
+    .about .bg, .about{
+        background-position:right top;
+        background-size:cover;
+    }
+}
+
+.about p {
+    font-family:'Slabo 27px', serif;
+    font-size:1.1em;
+}
+
+/*skills*/
+
+.skills{
+    background-image:url("pictures/11.jpeg");
+    background-size:cover;
+    padding:0;
+    margin:0;
+    font-family:'Slabo 27px', serif;
+    color:white;
+}
+.skills div {
+    float:left;
+    width:31.333%;
+    height:20vh;
+    text-align:center;
+    background:rgba(0,0,0,0.4);
+    border-radius:5%;
+    margin: 2% 1% 0 1%;
+}
+
+.skillprof{
+    float:left;
+    width:50%;
+}
+
+.profno{
+    float:left;
+    width:50%;
+}
+
+
+/*portfolio*/
+
+.pf {
+    width:100%;
+    text-align:center;
+    font-family:'Slabo 27px', serif;
+    height:20vh;
+
+}
+
+.portfolio{
+    background-image:url('pictures/12.jpeg');
+    background-size:cover;
+}
+
+
+.item1 {
+    background-image:url('pictures/portbg/1.png');
+    animation: pan 100s infinite linear;
+}
+
+.item2 {
+    background-image:url('pictures/portbg/2.png');
+    background-size:cover;
+    animation:pan 50s infinite linear;
+
+}
+
+.item3 {
+    background-image:url('pictures/portbg/3.png');
+    background-size:150%;
+    animation:pan 50s infinite linear;
+}
+
+.pfitembg{
+    height:20vh;
+    /* background-size:cover; */
+    background:rgba(0,0,0,0.3);
+    color:white;
+}
+
+.portfolio a{
+    color:white;
+}
+
+
+/*contact*/
+
+
+
+

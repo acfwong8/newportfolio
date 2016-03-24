@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<title>One Stop Shop</title>
+        <link href='https://fonts.googleapis.com/css?family=Lobster|Dancing+Script|Courgette|Bad+Script|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link href="normalize.css" rel="stylesheet">
+        <link href="clearfix.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">        
+    </head>
+    <body>
+        <button class="unhideButton hiddenbutton">Unhide Search</button>
+        <div class="title">
+            <h2>Where should I buy?<em> Simplified</em></h2>
+        </div>
+        <div class="form">
+            <select name="index" class="indices">
+                <option value="Books">Books</option>
+                <option value="DVD">DVD</option>
+                <option value="Music">Music</option>
+                <option value="Apparel">Apparel</option>
+                <option value="Video">Video</option>
+                <option value="Jewelry">Jewelry</option>
+                <option value="Automotive">Automotive</option>
+                <option value="Watch">Watch</option>
+                <option value="Electronics" selected>Electronics</option>
+            </select>
+
+
+            <form class="submitsearch">
+
+                <p>Name of Item: <input type="text" class ="itemsearch" placeholder="Item" autofocus></p>
+                <p>Your Currency: <input type="text" class="currency" placeholder="3-letter Currency Code" value="CAD"></p>
+                <p>Min. Price: <input type="text" class="minPrice" placeholder="Optional (in your currency)"> Max. Price: <input type="text" class="maxPrice" placeholder="Optional (in your currency)"></p>
+                <!-- <p>Region search: <select name="region" class="regionTLD">
+                <option value="com" selected>US</option>
+                <option value="ca">Canada</option>
+                <option value="de">Germany</option>
+                <option value="co.jp">Japan</option>
+                <option value="co.uk">UK</option>
+        </select></p> -->
+                <p><input type="submit" class="loadstuff" value="search"></p>
+
+                <p>Search regions:</p>
+                <p>Amazon:
+                    <input type="checkbox" class="checkbox checkbox1" id="USTLD" name="USTLD" value="com" checked><label for="USTLD">.com </label>
+                    <input type="checkbox" class="checkbox checkbox2" id="CATLD" name="CATLD" value="ca" checked> <label for="CATLD">.ca </label>
+                    <input type="checkbox" class="checkbox checkbox3" id="DETLD" name="DETLD" value="de" checked><label for="DETLD">.de </label>
+                    <input type="checkbox" class="checkbox checkbox4" id="JPTLD" name="JPTLD" value="co.jp"><label for="JPTLD">.co.jp </label>
+                    <input type="checkbox" class="checkbox checkbox5" id="UKTLD" name="UKTLD" value="co.uk"><label for="UKTLD">.co.uk </label>                
+                </p>
+                <p>eBay:
+                    <input type="checkbox" class="checkbox ebaycheck ebaycheck1" id="ebayTLD" name="ebayTLD" value=".com"><label for="ebayTLD">eBay Global Site</label>
+                </p>
+            </form>
+        </div>
+
+        <div id ="stores" class="cf">
+        <!-- <div id="Amazon" class="hidden store">
+        <h1>Listings from Amazon</h1>
+
+        <ul>
+        
+        </ul>
+
+        </div>
+
+        <div id="Ebay" class="hidden store">
+        <h1>Listings from eBay</h1>
+
+        <ul>
+        
+        </ul>
+
+        </div> -->
+        </div>
+
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/hmac-sha256.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/components/enc-base64.js"></script>
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.41.min.js"></script>
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>

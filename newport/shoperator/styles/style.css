@@ -1,0 +1,147 @@
+*{
+    box-sizing:border-box;
+    background:;
+    color:white;
+}
+
+body{
+    background:#77D;
+    text-align:center;
+    border-bottom:none;
+}
+input{
+    background:none;
+}
+
+h1 {
+    font-size:1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color:#ccc;
+    transition: all 0.25s ease;
+    font-size:1rem;
+    height:5vh;
+    overflow:scroll;
+    
+}
+a :hover{
+}
+
+.redlink{
+    color:red;
+    transition:all 0.25s ease;
+}
+
+
+ul {
+    float:left;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+h2 {
+    font-size:2rem;
+    text-align:center;
+}
+
+li {
+    text-decoration:none;
+    display:block;
+    margin-left:2px;
+    position:relative;
+    height: 100px;
+    font-size:1.2rem;
+    border-top:2px solid white;
+    width:100%;
+}
+
+.hidden {
+    opacity:0;
+    height:0;
+    transition: all 0.25s ease;
+    width:;
+    display:;
+}
+
+.hiddenitems{
+    position:absolute;
+    transition:all 1s ease;
+}
+.showitems{
+    position:static;
+    transition:all 1s ease;
+}
+
+.store {
+    float:left;
+    background:rgba(0,0,0,0.3);
+    border:2px solid white;
+}
+
+img {
+    right:0;
+    top:0;
+    height:200px;
+    opacity:0.8;
+    display:block;
+    transition:all 0.25s ease;
+    position:absolute;
+    margin:0;
+    z-index:1;
+    
+}
+
+.pricing {
+    font-style: italic;
+    font-size:0.8rem;
+    display:block;
+}
+
+.loadstuff{
+    border:1px solid white;
+    transition:all 0.5s ease;
+    border-radius:3px;
+}
+
+.buttonhover {
+    transition:all 0.5s ease;
+    background:red;
+}
+
+.submitsearch input{
+    border:1px solid white;
+    border-radius: 3px;
+}
+
+.checkbox{
+    display:none;
+}
+
+
+label{
+    border:1px solid white;
+    border-radius:3px;
+    margin:0 1%;
+    padding:0 3px;
+    box-shadow:10px 10px 10px black;
+    transition: all 0.5s ease;
+}
+
+.regionhover{
+    background:rgba(0,0,0,0.5);
+    box-shadow:5px 5px 5px black;
+}
+
+.checkbox:checked + label{
+    background:red;
+    box-shadow:none;
+    transition: all 0.5s ease;
+}
+
+.indices {
+    background:none;
+    color:#ccc;
+}

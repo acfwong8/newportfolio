@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="clearfix.css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+        <!-- <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'> -->
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="hidden cf">
+            <canvas id="navCircle">
+            </canvas>
+            <span class ="headright homenav"><a href="#canv">Home</a></span>
+            <span class="headright aboutnav"><a href="#about">About</a></span>
+            <span class="headright skillsnav"><a href="#skills">Skills</a></span>
+            <span class="headright portnav"><a href="#portfolio">Portfolio</a></span>
+            <span class="headright contnav"><a href="#contact">Contact</a></span>
+        </nav>
+
+        <section class="cf canvassec" id="canv">
+            <canvas id="canvas">
+            <img src="pictures/1.jpeg">
+            </canvas>
+
+        </section>
+
+        <section class ="cf about" id="about">
+            <div class="bg">
+                <div class="aboutleft">
+                    <!-- <img src="pictures/me/1.jpg"> -->
+                </div>
+                <div class="aboutright">
+                    <p>Hi, I'm Angus, Market Analyst turned Front-end Web Developer! Over the past two months at HackerYou's Full-time Web Development Bootcamp, I have relentlessly been pursuing code, mainly Javascript, PHP through WordPress, and HTML5/CSS.</p>
+                    <p>Through learning code, I have developed my previous passion for running logic through sets of data into churning complex yet adaptable functions for any scenario. My love for code and programming languages has led me to pursue other languages as well, primarily looking at functional programming in Clojure.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cf skills" id="skills">
+            <div class="jsskill skill">
+                <h2>Javascript</h2>
+                <p class="skillprof">Proficiency:</p>
+                <p class="profno">100%</p>
+            </div>
+            <div class="jqskill skill">
+                <h2>jQuery</h2>
+                <p class="skillprof">Proficiency:</p>
+                <p class="profno">100%</p>
+            </div>
+            <div class="htmlskill skill">
+                <h2>HTML5/CSS</h2>
+                <p class="skillprof">Proficiency:</p>
+                <p class="profno">100%</p>
+            </div>
+            <div class="wpskill skill">
+                <h2>WordPress/PHP</h2>
+                <p class="skillprof">Proficiency:</p>
+                <p class="profno">80%</p>
+            </div>
+            <div class ="jsother skill">
+                <h2>Other JS Frameworks</h2>
+                <p class="skillprof">Proficiency:</p>
+            </div>
+            <div class ="langother skill">
+                <h2>Other Tools</h2>
+                <h3><em>Git</em></h3>
+                <p class="skillprof">Proficiency:</p>
+                <p class="profno">
+            </div>
+        </section>
+
+        <section class="cf portfolio" id="portfolio">
+            <div class="pf item1">
+                <div class="pfitembg">
+                    <h3><a href="http://anguswong.co/echonest">Echonest API</a></h3>
+                </div>
+            </div>
+            <div class="pf item2">
+                <div class="pfitembg">
+                    <h3><a href="http://anguswong.co/the-shop">E-commerce</a></h3>
+                </div>
+            </div>
+            <div class="pf item3">
+                <div class="pfitembg">
+                    <h3><a href="http://anguswong.co/the-cafe">Cafe-themed Wordpress Template</a></h3>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="cf contact" id="contact">
+
+        </section>
+        <p>here</p>
+    </body>
+    <script src="jquery-1.11.3.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src="script.js">
+
+
+
+    </script>
+</html>
