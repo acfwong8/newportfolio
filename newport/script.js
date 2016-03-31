@@ -47,14 +47,21 @@ $('a').click(function(){
     },total);
     return false;
 })
-
+$(window).on('load',function(){
+    var height = $("#navCircle").height()*2;
+    $("section").css({"padding-bottom":height+10+"px"});
+});
 $(window).on('resize',function(){
     console.log($('.profbar').innerWidth());
+    var height = $("#navCircle").height();
+    $("section").css({"padding-bottom":height+10+"px"});
 });
 function portfolioItems(iterations){
     console.log(1);
     for (var i = 1; i <= iterations; i++){
         $('#portfolio .item' + i).addClass('animate' + i);
+        $('#portfolio .item' + i).removeClass('shrunk' + i);
+        $('#portfolio .item' + i).addClass('expand' + i);
     }
 }
 
@@ -62,6 +69,8 @@ function portfolioStatic(iterations){
     console.log(2);
     for (var i = 1; i <= iterations; i++){
         $('#portfolio .item' + i).removeClass('animate' + i);
+        $('#portfolio .item' + i).addClass('shrunk' + i);
+        $('#portfolio .item' + i).removeClass('expand' + i);
     }
 }
 

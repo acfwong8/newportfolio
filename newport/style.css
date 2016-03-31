@@ -27,7 +27,7 @@ h3 {
 
 
 section {
-    height:104vh;
+    height:100vh;
     padding-top:20px;
 }
 
@@ -117,60 +117,61 @@ nav {
 
 @media (max-width:1000px){
     nav{
-        width:26%;
-        margin:0 37%;
-    }
-}
-
-@media (min-width: 1001px) and (max-width:1300px){
-    nav{
         width:20%;
         margin:0 40%;
     }
 }
 
-@media (min-width:1301px){
+@media (min-width: 1001px) and (max-width:1300px){
     nav{
         width:16%;
         margin:0 42%;
     }
 }
-nav span {
-    position:absolute;
-    top:50%;
-    font-size:1.2em;
-    font-family:"oswaldregular", serif;
-    transition:all 0.5s ease-in;
 
+@media (min-width:1301px){
+    nav{
+        width:12%;
+        margin:0 44%;
+    }
+}
+nav span.headright {
+    position:absolute;
+    font-size:0.8em;
+    font-family:"oswaldregular", serif;
+    text-align:center;
+    transition:all 0.5s ease-in;
+    width:100%;
 }
 
 .homenav {
-    top:44%;
-    left:40%
+    top:50%;
+    transform:translateY(-50%) translateX(-50%);
+    left:50%;
 }
 
 .contnav {
-    top:68%;
-    left:62%;
-    transform:rotate(-45deg);
+    top:75%;
+    left:75%;
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
 }
 
 .aboutnav{
-    top:20%;
-    left:15%;
-    transform:rotate(-45deg);
+    top:25%;
+    left:25%;
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
 }
 
 .skillsnav {
-    top:20%;
-    left:66%;
-    transform:rotate(45deg);
+    top:25%;
+    left:75%;
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
 }
 
 .portnav {
-    top:64%;
-    left:12%;
-    transform:rotate(45deg);
+    top:75%;
+    left:25%;
+    transform:translateY(-50%) translateX(-50%) rotate(45deg);
 }
 
 nav span a{
@@ -245,6 +246,7 @@ nav span a:hover{
 
 .aboutright p{
     margin: 2% auto 0 auto;
+    color:white;
 }
 
 .aboutleft{
@@ -256,7 +258,8 @@ nav span a:hover{
 .about {
     margin:0;
     padding:0;
-    background-image: url("pictures/6.jpeg");
+    /* background-image: url("pictures/6.jpeg"); */
+    background:black;
     background-position: center;
     background-size: 150%;
     background-repeat: no-repeat;
@@ -428,68 +431,119 @@ nav span a:hover{
 }
 
 /*portfolio*/
-
+.pfwrapper{
+    position:relative;
+    height:100%;
+    width:90%;
+    margin: 0 auto 0 auto;
+}
 .pf {
-    width:100%;
     text-align:center;
     font-family:'Slabo 27px', serif;
-    height:20vh;
-
+    height:40%;
+    position:absolute;
+    transition: all 1s ease;
+    overflow:hidden;
 }
-
+.portfolio{
+    background-image:url('pictures/12.jpeg');
+    background-size:cover;
+    padding-top:1vh;
+}
 .animate1 {
     background-image:url('pictures/portbg/1.png');
-    animation:pan 100s infinite linear;
-    transition:all 0.25s ease-in;
+    background-size:cover;
+    background-position:center;
+    /* animation:pan 100s infinite linear; */
 }
 
 .animate2{
     background-image:url('pictures/portbg/2.png');
     background-size:cover;
-    animation:pan 50s infinite linear;
-    transition: all 0.25s ease-in;
+    background-position:center;
+    /* animation:pan 50s infinite linear; */
 }
 
 .animate3{
     background-image:url('pictures/portbg/3.png');
-    background-size:150%;
-    animation:pan 50s infinite linear;
-    transition: all 0.25s ease-in;
-}
-
-.portfolio{
-    background-image:url('pictures/12.jpeg');
     background-size:cover;
+    background-position:center;
+    /* animation:pan 50s infinite linear; */
 }
-
-
+.shrunk1{
+    left:16.66667%;
+    top:50%;
+    height:0;
+    width:0;
+    font-size:0;
+}
+.shrunk2{
+    left:50%;
+    top:50%;
+    height:0;
+    width:0;
+    font-size:0;
+}
+.shrunk3{
+    left:86.666667%;
+    top:50%;
+    height:0;
+    width:0;
+    font-size:0;
+}
+.expand1{
+    left:0;
+    top:30%;
+    width:25%;
+    /* height:100%; */
+    /* width:100%; */
+}
+.expand1 p, .expand3 p{
+    font-size:0;
+}
+.expand2{
+    left:25%;
+    top:0;
+    width:50%;
+    height:100%;
+    /* width:100%; */
+}
+.expand3{
+    left:75%;
+    top:30%;
+    width:25%;
+    /* height:100%; */
+    /* width:100%; */
+}
 .item1 {
     /* background-image:url('pictures/portbg/1.png'); */
     /* animation: pan 100s infinite linear; */
-    transition: all 0.25s ease-in;
 }
 
 .item2 {
     /* background-image:url('pictures/portbg/2.png'); */
     /* background-size:cover; */
     /* animation:pan 50s infinite linear; */
-    transition: all 0.25s ease-in;
 }
 
 .item3 {
     /* background-image:url('pictures/portbg/3.png'); */
     /* background-size:150%; */
     /* animation:pan 50s infinite linear;  */
-    transition: all 0.25s ease-in;
 }
 
 .pfitembg{
-    height:20vh;
+    height:;
     /* background-size:cover; */
     background:rgba(0,0,0,0.5);
     color:white;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
 }
-
+.pfitembg h3{
+    margin-top:0;
+}
 .portfolio a{
     color:white;
 }
