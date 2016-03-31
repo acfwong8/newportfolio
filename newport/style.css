@@ -569,8 +569,19 @@ nav span a:hover{
     border-shadow:none;
     /* background:white; */
     border: 1px solid white;
+    transition:all 0.25s ease;
+}
+.hidebutton{
+    height:0;
+    width:0;
+    font-size:0;
+    opacity:0;
+}
+.showbutton{
     height:60px;
     width:60px;
+    font-size:0.6em;
+    opacity:1;
 }
 .portRight{
     position:absolute;

@@ -394,7 +394,7 @@ function drawText(fontsize,clear,start,spacing){
 
     var text = "Angus Wong";
     var text2 = "Front-end Web Developer";
-    var text3 = ["Javascript","HTML5/CSS","Node.js","jQuery","","PHP","Wordpress"]
+    var text3 = ["Javascript","HTML5/CSS","Node.js","jQuery","SQL Database","PHP","Wordpress"];
     var text3counter = 0;
 
 
