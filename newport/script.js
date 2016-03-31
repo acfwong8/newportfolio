@@ -23,6 +23,7 @@ $('a').click(function(){
         profBar(100,'jqprofbar',0);
         profBar(100,'htmlprofbar',0);
         profBar(85,'wpprofbar',0);
+        profBar(85,'nodeprofbar',0);
         profBar(50,'reactprofbar',0);
         profBar(20,'angularprofbar',0);
         profBar(100,'gitprofbar',0);
@@ -39,6 +40,7 @@ $('a').click(function(){
             profBar(100,'jqprofbar',1);
             profBar(100,'htmlprofbar',1);
             profBar(85,'wpprofbar',1);
+            profBar(85,'nodeprofbar',1);
             profBar(50,'reactprofbar',1);
             profBar(20,'angularprofbar',1);
             profBar(100,'gitprofbar',1);
@@ -50,6 +52,7 @@ $('a').click(function(){
 $(window).on('load',function(){
     var height = $("#navCircle").height()*2;
     $("section").css({"padding-bottom":height+10+"px"});
+    portfolioScroll();
 });
 $(window).on('resize',function(){
     console.log($('.profbar').innerWidth());
@@ -72,6 +75,34 @@ function portfolioStatic(iterations){
         $('#portfolio .item' + i).addClass('shrunk' + i);
         $('#portfolio .item' + i).removeClass('expand' + i);
     }
+}
+var currentPort = 2;
+function portfolioScroll(){
+    $(".portRight").on("click",function(){
+        var previous = currentPort - 1;
+        var current = currentPort;
+        var next = currentPort + 1;
+        var newp = currentPort + 2;
+        $(".item"+current).removeClass("expand2").addClass("expand1");
+        $(".item"+previous).removeClass("expand1").addClass("shrunk1");
+        $(".item"+next).removeClass("expand3").addClass("expand2");
+        $(".item"+newp).removeClass("shrunk3").addClass("expand3");
+        setTimeout(function(){
+            
+        });
+        currentPort++;
+    });
+    $(".portLeft").on("click",function(){
+        var newp = currentPort -2;
+        var previous = currentPort -1;
+        var current = currentPort;
+        var next = currentPort +1;
+        $(".item"+current).removeClass("expand2").addClass("expand3");
+        $(".item"+previous).removeClass("expand1").addClass("expand2");
+        $(".item"+newp).removeClass("shrunk1").addClass("expand1");
+        $(".item"+next).removeClass("expand3").addClass("shrunk3");
+        currentPort--;
+    });
 }
 
 $('#about').on('mousemove',function(event){
@@ -199,13 +230,13 @@ $('.skillwrap').on('click',function(){
     var clicked = $(this).parent();
     if($(this).hasClass('skillfocus')){
         $('.skillwrap').removeClass('skillfocus');
-        for(var i = 0; i<=5; i++){
+        for(var i = 0; i<=6; i++){
             $('.skillwrap').removeClass('newskillwrap'+i);
         }
         $(this).find('.readless').addClass('hidden');
         $(this).find('.readmore').removeClass('hidden');
     } else {
-        for(var i = 0; i<=5; i++){
+        for(var i = 0; i<=6; i++){
             $('.skillwrap').removeClass('newskillwrap'+i);
         }        
         var wrapno = 1;

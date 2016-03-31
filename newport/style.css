@@ -319,6 +319,7 @@ nav span a:hover{
 .skillwrap4{top:28%;left:2%;}
 .skillwrap5{top:28%;left:34.333%;}
 .skillwrap6{top:28%;left:66.667%;}
+.skillwrap7{top:50%;left:2%;}
 
 
 .newskillwrap1{top:6%;left:34.333%;}
@@ -326,6 +327,7 @@ nav span a:hover{
 .newskillwrap5{top:50%;left:34.33%;}
 .newskillwrap3{top:28%;left:34.333%;}
 .newskillwrap4{top:28%;left:66.667%;}
+.newskillwrap6{top:50%;left:66.667%;}
 
 .skillfocus{
     top:6%;
@@ -450,21 +452,27 @@ nav span a:hover{
     background-size:cover;
     padding-top:1vh;
 }
-.animate1 {
+.item1 {
     background-image:url('pictures/portbg/1.png');
     background-size:cover;
     background-position:center;
     /* animation:pan 100s infinite linear; */
 }
 
-.animate2{
+.item3{
     background-image:url('pictures/portbg/2.png');
     background-size:cover;
     background-position:center;
     /* animation:pan 50s infinite linear; */
 }
 
-.animate3{
+.item2{
+    background-image:url('pictures/portbg/mantronic-ss.png');
+    background-size:cover;
+    background-position:center;
+    /* animation:pan 50s infinite linear; */
+}
+.item4{
     background-image:url('pictures/portbg/3.png');
     background-size:cover;
     background-position:center;
@@ -476,6 +484,7 @@ nav span a:hover{
     height:0;
     width:0;
     font-size:0;
+    z-index:2;
 }
 .shrunk2{
     left:50%;
@@ -490,28 +499,36 @@ nav span a:hover{
     height:0;
     width:0;
     font-size:0;
+    z-index:2;
 }
 .expand1{
     left:0;
     top:30%;
     width:25%;
+    z-index:3;
     /* height:100%; */
     /* width:100%; */
 }
 .expand1 p, .expand3 p{
     font-size:0;
+    transition:all 0.25s ease;
+}
+.expand2 p{
+    transition:all 0.25s ease;
 }
 .expand2{
     left:25%;
     top:0;
     width:50%;
     height:100%;
+    z-index:4;
     /* width:100%; */
 }
 .expand3{
     left:75%;
     top:30%;
     width:25%;
+    z-index:3;
     /* height:100%; */
     /* width:100%; */
 }
@@ -546,6 +563,26 @@ nav span a:hover{
 }
 .portfolio a{
     color:white;
+}
+.portButton{
+    border-radius:50%;
+    border-shadow:none;
+    /* background:white; */
+    border: 1px solid white;
+    height:60px;
+    width:60px;
+}
+.portRight{
+    position:absolute;
+    top:90%;
+    left:85%;
+    transform:translateX(-50%);
+}
+.portLeft{
+    position:absolute;
+    top:90%;
+    left:15%;
+    transform:translateX(-50%);
 }
 
 
