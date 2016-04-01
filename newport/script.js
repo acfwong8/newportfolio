@@ -55,12 +55,10 @@ $(window).on('load',function(){
     portfolioScroll();
 });
 $(window).on('resize',function(){
-    console.log($('.profbar').innerWidth());
     var height = $("#navCircle").height();
     $("section").css({"padding-bottom":height+10+"px"});
 });
 function portfolioItems(iterations){
-    console.log(1);
     for (var i = 1; i <= iterations; i++){
         var portItem = currentPort-2+i;
         // $('#portfolio .item' + i).addClass('animate' + i);
@@ -72,7 +70,6 @@ function portfolioItems(iterations){
 }
 
 function portfolioStatic(iterations){
-    console.log(2);
     for (var i = 1; i <= iterations; i++){
         var portItem = currentPort -2 +i;
         // $('#portfolio .item' + i).removeClass('animate' + i);
@@ -115,7 +112,6 @@ $('#about').on('mousemove',function(event){
     var dot, eventDoc, doc, body, pageX, pageY;
     
     event = event || window.event; // IE-ism
-    console.log(event);
     // If pageX/Y aren't available and clientX/Y are,
     // calculate pageX/Y - logic taken from jQuery.
     // (This is to support old IE)
@@ -150,7 +146,6 @@ $(document).on('scroll',function(event){
     var dot, eventDoc, doc, body, pageX, pageY;
     
     event = event || window.event; // IE-ism
-    console.log(event);
     // If pageX/Y aren't available and clientX/Y are,
     // calculate pageX/Y - logic taken from jQuery.
     // (This is to support old IE)
@@ -179,7 +174,6 @@ $(document).on('scroll',function(event){
     var posX = (((event.pageX/$('#about').width())*100-1)-50)*multX+50;
     var posY = (((aboutheight/$('#about').height())*100-1)-50)*multY+50;
     aboutback.style.backgroundPosition = posX + "% " + posY + "%";
-    console.log(posX);
 })
 
 
@@ -394,7 +388,7 @@ function drawText(fontsize,clear,start,spacing){
 
     var text = "Angus Wong";
     var text2 = "Front-end Web Developer";
-    var text3 = ["Javascript","HTML5/CSS","Node.js","jQuery","","PHP","Wordpress"]
+    var text3 = ["Javascript","HTML5/CSS","Node.js","jQuery","SQL Database","PHP","Wordpress"];
     var text3counter = 0;
 
 
